@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EstadosActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:text="Informe a sigla do estado"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/idInputEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textCapSentences|textCapWords"
+        android:minHeight="48dp"
+        android:text="MG"
+        android:textAlignment="textStart"
+        android:textAllCaps="true" />
+
+    <Button
+        android:id="@+id/idBntListarCidades"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listar cidades" />
+
+</LinearLayout>

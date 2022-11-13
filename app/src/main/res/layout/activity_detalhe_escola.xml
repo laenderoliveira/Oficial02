@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetalheEscolaActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/idInputNomeEscola"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textCapSentences|textCapWords"
+        android:minHeight="48dp"
+        android:text=""
+        android:textAlignment="textStart"
+        android:textAllCaps="true"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Endereço:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/idInputEnderecoEscola"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textCapSentences|textCapWords"
+        android:minHeight="48dp"
+        android:text=""
+        android:textAlignment="textStart"
+        android:textAllCaps="true"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Situação:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/idInputSituacaoEscola"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textCapSentences|textCapWords"
+        android:minHeight="48dp"
+        android:text=""
+        android:textAlignment="textStart"
+        android:textAllCaps="true"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dependência administrativa:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/idInputDependenciaAdministrativaEscola"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textCapSentences|textCapWords"
+        android:minHeight="48dp"
+        android:text=""
+        android:textAlignment="textStart"
+        android:textAllCaps="true"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/idBntAbrirMapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ABRIR NO MAPA" />
+
+</LinearLayout>
