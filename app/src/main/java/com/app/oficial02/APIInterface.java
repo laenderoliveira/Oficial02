@@ -14,7 +14,7 @@ public interface APIInterface {
 
     // Foi utilizado object porque a API retorna uma lista de objetos de tipo distintos.
     @GET("api/escolas/buscaavancada?")
-    Call<List<Object>> listarEscolarPorCidade(@Query("cidade") int cidade);
+    Call<List<Object>> listarEscolasPorCidade(@Query("cidade") int cidade);
 
     @GET("/api/escola/{escola}")
     Call<EscolaModel> buscarDetalhesEscola(@Path("escola") int escola);

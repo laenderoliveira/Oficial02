@@ -5,8 +5,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -52,7 +50,7 @@ public class EscolasActivity extends AppCompatActivity {
         Bundle dados = getIntent().getExtras();
         int codigoCidade = Integer.parseInt(dados.getSerializable("codigoCidade").toString());
 
-        Call<List<Object>> call = _apiInterface.listarEscolarPorCidade(codigoCidade);
+        Call<List<Object>> call = _apiInterface.listarEscolasPorCidade(codigoCidade);
 
         call.enqueue(new Callback<List<Object>>() {
             @Override

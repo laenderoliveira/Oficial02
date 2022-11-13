@@ -39,7 +39,6 @@ public class BoaVindasActivity extends AppCompatActivity {
             Intent intent = new Intent(getApplicationContext(), EscolasActivity.class);
                 intent.putExtra("codigoCidade", cidade.split(":")[0]);
                 startActivity(intent);
-
         });
     }
 }

@@ -39,7 +39,6 @@ public class DetalheEscolaActivity extends AppCompatActivity {
         _inputDependenciaAdministrativaEscola = findViewById(R.id.idInputDependenciaAdministrativaEscola);
         _bntAbrirMapa = findViewById(R.id.idBntAbrirMapa);
 
-
         ProgressDialog dialogDeCarregamento = ProgressDialog.show(DetalheEscolaActivity.this, "",
                 "Carregando. Aguarde...", true);
 
@@ -73,15 +72,12 @@ public class DetalheEscolaActivity extends AppCompatActivity {
             }
         });
 
-
         _bntAbrirMapa.setOnClickListener(view ->
         {
             String uri = String.format(Locale.ENGLISH, "geo:%f,%f", _escola.latitude, _escola.longitude);
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
             this.startActivity(intent);
         });
-
-
     }
 
     private void carregarDadosEscola(EscolaModel escola) {
@@ -95,7 +91,6 @@ public class DetalheEscolaActivity extends AppCompatActivity {
         disabilitarEditText(_inputEnderecoEscola);
         disabilitarEditText(_inputSituacaoEscola);
         disabilitarEditText(_inputDependenciaAdministrativaEscola);
-
     }
 
     private void disabilitarEditText(EditText editText) {
